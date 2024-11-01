@@ -3,7 +3,7 @@ var validate
   , toAscii
   , assert = require('assert')
   , SMConsumer = require('source-map').SourceMapConsumer
-  , each = require('lodash/foreach')
+  , each = Array.prototype.forEach.call
   , template = require('lodash/template')
   , jsesc = require('jsesc')
   , fancyArrow = String.fromCharCode(parseInt(2192,16));
